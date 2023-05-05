@@ -70,7 +70,7 @@ class UtilFunctions {
     return gotPermissions;
   }
 
-  static Future<void> getFile(BuildContext context, bool onBoard) async {
+  static Future<void> getFile(BuildContext context, String fileExtension) async {
     bool hasPermission = await prepareStorage();
     if (!hasPermission) {
       return;
@@ -81,7 +81,7 @@ class UtilFunctions {
         context: context,
         rootDirectory: Directory('/storage/emulated/0/'),
         fsType: FilesystemType.file,
-        allowedExtensions: [".journal"],
+        allowedExtensions: [fileExtension],
         fileTileSelectMode: FileTileSelectMode.wholeTile,
         folderIconColor: Theme.of(context).primaryColor,
         requestPermission: () async => await prepareStorage(),
@@ -101,7 +101,7 @@ class UtilFunctions {
 
   static Future<bool> createFile(String pathToSave, String fileName, String fileExtension) async {
     bool hasPermission = await prepareStorage();
-    if (!hasPermission) {git
+    if (!hasPermission) {
       return false;
     }
 

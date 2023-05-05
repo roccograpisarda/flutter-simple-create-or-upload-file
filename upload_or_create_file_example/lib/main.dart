@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 
 import 'components/setting_page.dart';
 
-void main() => runApp(const MyApp());
+void main() => runApp(const App());
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'My App',
-      home: SettingsPage(),
-    );
+    return MaterialApp(
+        title: "Upload or create file example",
+        theme: ThemeData(
+          primaryColor: Colors.blue,
+        ),
+        home:const SettingsPage());
   }
 }

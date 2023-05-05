@@ -5,10 +5,12 @@ import 'create_file_page.dart';
 
 class Settings extends StatelessWidget {
   final String filePath;
+  final String fileExtension;
 
   const Settings({
     Key? key,
     required this.filePath,
+    required this.fileExtension
   }) : super(key: key);
 
   @override
@@ -61,7 +63,7 @@ class Settings extends StatelessWidget {
                     ),
                   ),
                   onPressed: () async {
-                    UtilFunctions.getFile(context, false);
+                    UtilFunctions.getFile(context, fileExtension);
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

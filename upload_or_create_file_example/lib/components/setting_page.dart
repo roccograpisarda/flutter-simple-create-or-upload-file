@@ -35,7 +35,7 @@ class _SettingPageState extends State<SettingsPage> {
         title: const Text("Settings Page"),
         backgroundColor: Theme.of(context).primaryColor,
       ),
-      body: Settings(filePath: filePath),
+      body: Settings(filePath: filePath, fileExtension: ".txt"),
     );
   }
 }
