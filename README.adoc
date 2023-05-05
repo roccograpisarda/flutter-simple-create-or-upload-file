@@ -62,11 +62,11 @@ cd simple-create-or-upload-file/app && flutter pub get && flutter run
 
 [cols="a,a,a,a,a", frame=none, grid=none]
 |===
-| image::imgs/screenshots/no_file_start_page.png[alt=no_file_start_page, title="Starting page with no file selected"]
+| image::imgs/screenshots/no_file_start_page.png[alt=no_file_start_page, title="No file created or selected"]
 | image::imgs/screenshots/select_file.png[alt=select_file, title="Select file dialog"]
-| image::imgs/screenshots/create_file_page.png[alt=create_file_page, title="Create file page"]
+| image::imgs/screenshots/create_file_page.png[alt=create_file_page, title="Create file page",]
 | image::imgs/screenshots/save_to_folder.png[alt=save_to_folder, title="Select folder dialog"]
-| image::imgs/screenshots/start_page_after_upload_or_creation.png[alt=start_page_after_upload_or_creation, title="Starting page after that a fiel is selected or created"]
+| image::imgs/screenshots/start_page_after_upload_or_creation.png[alt=start_page_after_upload_or_creation, title="File created or selected"]
 |===
 
 
